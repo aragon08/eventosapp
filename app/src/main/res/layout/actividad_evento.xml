@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.israel.appsamx.eventosapp.ActividadEvento"
+    android:id="@+id/actividad_evento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tv_titulo_actividad_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    <EditText
+        android:id="@+id/et_nombre_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del evento"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/et_descripcion_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción del evento"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/et_fecha_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:textIsSelectable="false"
+        android:hint="Fecha del evento" />
+    <TextView
+        android:id="@+id/tv_titulo_contactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contactos del evento"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <Button
+        android:id="@+id/btn_agregar_contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar contacto"
+        android:textAllCaps="false"/>
+    <ListView
+        android:id="@+id/lv_lista_contactos"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+    <Button
+        android:id="@+id/btn_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Evento"/>
+</LinearLayout>
